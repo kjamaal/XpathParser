@@ -1,5 +1,3 @@
-// Provides everything you need to work with the DOM
-// Document, Element, Node, NodeList, Text, Exceptions, etc.
 
 package org.kirkplace.xpath;
 
@@ -11,17 +9,16 @@ import org.xml.sax.*;
 
 public class Xpath{
 
-  private DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance(); // get a parser that turns a xml doc into a DOM tree
-  private DocumentBuilder builder; // Turns xml into a DOM tree
-  private Document doc = null; // xml Document to be parsed
+  private DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance(); 
+  private DocumentBuilder builder; 
+  private Document doc = null;
   private XPath xpath = XPathFactory.newInstance().newXPath();
-  private XPathExpression expr; // XPath Query
+  private XPathExpression expr;
   
   protected Document buildDoc(String text){
 	
 	  try {
-			// parses the file supplied
-		   	domFactory.setNamespaceAware(true);				// Provides support for XML namespaces if needed
+		   	domFactory.setNamespaceAware(true);				
 		   	builder = domFactory.newDocumentBuilder();
 			doc = builder.parse((InputStream) new ByteArrayInputStream(text.getBytes("UTF-8")));
 		} 
@@ -52,11 +49,11 @@ public class Xpath{
   
   protected NodeList getNodeNameAndValue(Document doc, XPathExpression xpath)throws XPathExpressionException{
 	  
-		Object result = null; // returned from query
+		Object result = null;
 				
 		try {
 			
-			result = xpath.evaluate(doc, XPathConstants.NODESET); // Returns the result of the query
+			result = xpath.evaluate(doc, XPathConstants.NODESET);
 		} 
 		
 		catch (XPathExpressionException e){
@@ -67,7 +64,7 @@ public class Xpath{
 			throw e;
 		}
 		
-		NodeList nodes = (NodeList) result; // Outputs the results of the query
+		NodeList nodes = (NodeList) result;
 		
 		return nodes;
 		
