@@ -17,8 +17,8 @@ public class XMLDocument {
 	private DocumentBuilder builder;
 	private Document doc = null;	
 	
-	public Document buildDoc(String text){
-		
+	public XMLDocument(String text){
+				
 		  try {
 			   	domFactory.setNamespaceAware(true);				
 			   	builder = domFactory.newDocumentBuilder();
@@ -32,7 +32,9 @@ public class XMLDocument {
 				e.getClass();
 							
 			}
-		  
-		  return doc;
-	  }
+	}
+	
+	public Document getDocument(){
+		return doc;
+	}
 }

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <ns1:getRequestItemsResponse soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://services.soap.usm.ca.com">
+         <getRequestItemsReturn soapenc:arrayType="ns2:SubscriptionDetail[4]" xsi:type="soapenc:Array" xmlns:ns2="urn:usmRequestService" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+            <getRequestItemsReturn xsi:type="ns2:SubscriptionDetail">
+               <accountLabel xsi:type="soapenc:string">Asurion:Jamaal.Kirkpatrick</accountLabel>
+               <accountNo xsi:type="soapenc:string">10021</accountNo>
+               <charge xsi:type="xsd:int">1</charge>
+               <chargeDate xsi:type="soapenc:string">8/8/2013 15:34:14</chargeDate>
+               <code xsi:type="soapenc:string"/>
+               <domain xsi:type="soapenc:string">Asurion</domain>
+               <enum1 xsi:type="xsd:int">-1</enum1>
+               <enum2 xsi:type="xsd:int">-1</enum2>
+               <enum3 xsi:type="xsd:int">-1</enum3>
+               <groupID xsi:type="xsd:int">7</groupID>
+               <installments xsi:type="xsd:int">0</installments>
+               <instanceName xsi:type="soapenc:string"/>
+               <itemID xsi:type="xsd:int">10024</itemID>
+               <lastChargeDate xsi:type="soapenc:string">8/8/2013 15:34:14</lastChargeDate>
+               <lastTiered xsi:type="soapenc:string"/>
+               <numeric1 xsi:type="xsd:double">0.0</numeric1>
+               <numeric2 xsi:type="xsd:double">0.0</numeric2>
+               <offeringID xsi:type="xsd:int">10009</offeringID>
+               <parentDomain xsi:type="soapenc:string">Asurion</parentDomain>
+               <ratePlanID xsi:type="xsd:int">10004</ratePlanID>
+               <requestID xsi:type="xsd:int">10378</requestID>
+               <requestType xsi:type="xsd:int">1</requestType>
+               <sdRowID xsi:type="xsd:int">1</sdRowID>
+               <status xsi:type="xsd:int">1000</status>
+               <subscribedDate xsi:type="soapenc:string">8/8/2013 15:34:14</subscribedDate>
+               <subscriptionDetailID xsi:type="xsd:int">11671</subscriptionDetailID>
+               <subscriptionType xsi:type="xsd:int">0</subscriptionType>
+               <text1 xsi:type="soapenc:string"/>
+               <text2 xsi:type="soapenc:string"/>
+               <text3 xsi:type="soapenc:string"/>
+               <text4 xsi:type="soapenc:string"/>
+               <text5 xsi:type="soapenc:string"/>
+               <tieredItemID xsi:type="xsd:int">-1</tieredItemID>
+               <tieredLastDate xsi:type="soapenc:string">8/8/2013 15:34:14</tieredLastDate>
+               <unsubscribedDate xsi:type="soapenc:string" xsi:nil="true"/>
+            </getRequestItemsReturn>
+            <getRequestItemsReturn xsi:type="ns2:SubscriptionDetail">
+               <accountLabel xsi:type="soapenc:string">Asurion:Jamaal.Kirkpatrick</accountLabel>
+               <accountNo xsi:type="soapenc:string">10021</accountNo>
+               <charge xsi:type="xsd:int">1</charge>
+               <chargeDate xsi:type="soapenc:string">8/8/2013 15:34:14</chargeDate>
+               <code xsi:type="soapenc:string"/>
+               <domain xsi:type="soapenc:string">Asurion</domain>
+               <enum1 xsi:type="xsd:int">-1</enum1>
+               <enum2 xsi:type="xsd:int">-1</enum2>
+               <enum3 xsi:type="xsd:int">-1</enum3>
+               <groupID xsi:type="xsd:int">7</groupID>
+               <installments xsi:type="xsd:int">0</installments>
+               <instanceName xsi:type="soapenc:string"/>
+               <itemID xsi:type="xsd:int">10027</itemID>
+               <lastChargeDate xsi:type="soapenc:string">8/8/2013 15:34:14</lastChargeDate>
+               <lastTiered xsi:type="soapenc:string"/>
+               <numeric1 xsi:type="xsd:double">0.0</numeric1>
+               <numeric2 xsi:type="xsd:double">0.0</numeric2>
+               <offeringID xsi:type="xsd:int">10009</offeringID>
+               <parentDomain xsi:type="soapenc:string">Asurion</parentDomain>
+               <ratePlanID xsi:type="xsd:int">10004</ratePlanID>
+               <requestID xsi:type="xsd:int">10378</requestID>
+               <requestType xsi:type="xsd:int">1</requestType>
+               <sdRowID xsi:type="xsd:int">1</sdRowID>
+               <status xsi:type="xsd:int">1000</status>
+               <subscribedDate xsi:type="soapenc:string">8/8/2013 15:34:14</subscribedDate>
+               <subscriptionDetailID xsi:type="xsd:int">11672</subscriptionDetailID>
+               <subscriptionType xsi:type="xsd:int">5</subscriptionType>
+               <text1 xsi:type="soapenc:string">10041</text1>
+               <text2 xsi:type="soapenc:string"/>
+               <text3 xsi:type="soapenc:string"/>
+               <text4 xsi:type="soapenc:string"/>
+               <text5 xsi:type="soapenc:string"/>
+               <tieredItemID xsi:type="xsd:int">-1</tieredItemID>
+               <tieredLastDate xsi:type="soapenc:string">8/8/2013 15:34:14</tieredLastDate>
+               <unsubscribedDate xsi:type="soapenc:string" xsi:nil="true"/>
+            </getRequestItemsReturn>
+            <getRequestItemsReturn xsi:type="ns2:SubscriptionDetail">
+               <accountLabel xsi:type="soapenc:string">Asurion:Jamaal.Kirkpatrick</accountLabel>
+               <accountNo xsi:type="soapenc:string">10021</accountNo>
+               <charge xsi:type="xsd:int">1</charge>
+               <chargeDate xsi:type="soapenc:string">8/8/2013 15:34:14</chargeDate>
+               <code xsi:type="soapenc:string"/>
+               <domain xsi:type="soapenc:string">Asurion</domain>
+               <enum1 xsi:type="xsd:int">-1</enum1>
+               <enum2 xsi:type="xsd:int">-1</enum2>
+               <enum3 xsi:type="xsd:int">-1</enum3>
+               <groupID xsi:type="xsd:int">7</groupID>
+               <installments xsi:type="xsd:int">0</installments>
+               <instanceName xsi:type="soapenc:string"/>
+               <itemID xsi:type="xsd:int">10026</itemID>
+               <lastChargeDate xsi:type="soapenc:string">8/8/2013 15:34:14</lastChargeDate>
+               <lastTiered xsi:type="soapenc:string"/>
+               <numeric1 xsi:type="xsd:double">1.0</numeric1>
+               <numeric2 xsi:type="xsd:double">0.0</numeric2>
+               <offeringID xsi:type="xsd:int">10009</offeringID>
+               <parentDomain xsi:type="soapenc:string">Asurion</parentDomain>
+               <ratePlanID xsi:type="xsd:int">10004</ratePlanID>
+               <requestID xsi:type="xsd:int">10378</requestID>
+               <requestType xsi:type="xsd:int">1</requestType>
+               <sdRowID xsi:type="xsd:int">1</sdRowID>
+               <status xsi:type="xsd:int">1000</status>
+               <subscribedDate xsi:type="soapenc:string">8/8/2013 15:34:14</subscribedDate>
+               <subscriptionDetailID xsi:type="xsd:int">11673</subscriptionDetailID>
+               <subscriptionType xsi:type="xsd:int">0</subscriptionType>
+               <text1 xsi:type="soapenc:string"/>
+               <text2 xsi:type="soapenc:string"/>
+               <text3 xsi:type="soapenc:string"/>
+               <text4 xsi:type="soapenc:string"/>
+               <text5 xsi:type="soapenc:string">0</text5>
+               <tieredItemID xsi:type="xsd:int">-1</tieredItemID>
+               <tieredLastDate xsi:type="soapenc:string">8/8/2013 15:34:14</tieredLastDate>
+               <unsubscribedDate xsi:type="soapenc:string" xsi:nil="true"/>
+            </getRequestItemsReturn>
+            <getRequestItemsReturn xsi:type="ns2:SubscriptionDetail">
+               <accountLabel xsi:type="soapenc:string">Asurion:Jamaal.Kirkpatrick</accountLabel>
+               <accountNo xsi:type="soapenc:string">10021</accountNo>
+               <charge xsi:type="xsd:int">1</charge>
+               <chargeDate xsi:type="soapenc:string">8/8/2013 15:34:14</chargeDate>
+               <code xsi:type="soapenc:string"/>
+               <domain xsi:type="soapenc:string">Asurion</domain>
+               <enum1 xsi:type="xsd:int">-1</enum1>
+               <enum2 xsi:type="xsd:int">-1</enum2>
+               <enum3 xsi:type="xsd:int">-1</enum3>
+               <groupID xsi:type="xsd:int">7</groupID>
+               <installments xsi:type="xsd:int">0</installments>
+               <instanceName xsi:type="soapenc:string"/>
+               <itemID xsi:type="xsd:int">10025</itemID>
+               <lastChargeDate xsi:type="soapenc:string">8/8/2013 15:34:14</lastChargeDate>
+               <lastTiered xsi:type="soapenc:string"/>
+               <numeric1 xsi:type="xsd:double">0.0</numeric1>
+               <numeric2 xsi:type="xsd:double">0.0</numeric2>
+               <offeringID xsi:type="xsd:int">10009</offeringID>
+               <parentDomain xsi:type="soapenc:string">Asurion</parentDomain>
+               <ratePlanID xsi:type="xsd:int">10004</ratePlanID>
+               <requestID xsi:type="xsd:int">10378</requestID>
+               <requestType xsi:type="xsd:int">1</requestType>
+               <sdRowID xsi:type="xsd:int">1</sdRowID>
+               <status xsi:type="xsd:int">1000</status>
+               <subscribedDate xsi:type="soapenc:string">8/8/2013 15:34:14</subscribedDate>
+               <subscriptionDetailID xsi:type="xsd:int">11674</subscriptionDetailID>
+               <subscriptionType xsi:type="xsd:int">0</subscriptionType>
+               <text1 xsi:type="soapenc:string"/>
+               <text2 xsi:type="soapenc:string"/>
+               <text3 xsi:type="soapenc:string"/>
+               <text4 xsi:type="soapenc:string"/>
+               <text5 xsi:type="soapenc:string"/>
+               <tieredItemID xsi:type="xsd:int">-1</tieredItemID>
+               <tieredLastDate xsi:type="soapenc:string">8/8/2013 15:34:14</tieredLastDate>
+               <unsubscribedDate xsi:type="soapenc:string" xsi:nil="true"/>
+            </getRequestItemsReturn>
+         </getRequestItemsReturn>
+      </ns1:getRequestItemsResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
