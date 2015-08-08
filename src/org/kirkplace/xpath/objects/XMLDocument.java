@@ -9,19 +9,23 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
+
 import org.xml.sax.SAXException;
 
 public class XMLDocument {
 	
-	private DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
-	private DocumentBuilder builder;
 	private Document doc = null;	
 	
-	public XMLDocument(String text){
-				
+	public Document getDoc() {
+		return doc;
+	}
+
+	public void setDoc(String text, boolean namespace) {
+		DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
+		
 		  try {
-			   	domFactory.setNamespaceAware(true);				
-			   	builder = domFactory.newDocumentBuilder();
+			   	domFactory.setNamespaceAware(namespace);				
+			   	DocumentBuilder builder = domFactory.newDocumentBuilder();
 				doc = builder.parse((InputStream) new ByteArrayInputStream(text.getBytes("UTF-8")));
 			} 
 		
@@ -32,9 +36,5 @@ public class XMLDocument {
 				e.getClass();
 							
 			}
-	}
-	
-	public Document getDocument(){
-		return doc;
 	}
 }

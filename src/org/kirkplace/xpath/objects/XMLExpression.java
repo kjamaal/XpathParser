@@ -7,17 +7,22 @@ import javax.xml.xpath.XPathFactory;
 public class XMLExpression {
 	
 	private XPathExpression expr;
-	private XPath xpath = XPathFactory.newInstance().newXPath();
-	  	
-	public XPathExpression buildXpath(String text) throws Exception{
-		  
-		  try {
+	
+	
+	
+	public XPathExpression getExpr() {
+		return expr;
+	}
+
+	public void setExpr(String text) throws XpathException{
+		XPath xpath = XPathFactory.newInstance().newXPath();
+		
+		try {
 			  
 			expr = xpath.compile(text);
 		} 
 		  catch (Exception e) {
-			throw e;
+			throw new XpathException(e.getMessage());
 		}
-		  return expr;
-	  }
+	}
 }

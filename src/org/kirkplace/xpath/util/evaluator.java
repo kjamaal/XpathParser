@@ -4,12 +4,13 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 
+import org.kirkplace.xpath.objects.XpathException;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
-public class evaluator {
+public class Evaluator {
 	
-	protected NodeList getNodeNameAndValue(Document doc, XPathExpression xpath)throws XPathExpressionException{
+	public NodeList getNodeNameAndValue(Document doc, XPathExpression xpath)throws XpathException{
 		  
 		Object result = null;
 				
@@ -19,11 +20,7 @@ public class evaluator {
 		} 
 		
 		catch (XPathExpressionException e){
-			
-			e.getStackTrace();
-			e.getMessage();
-			e.getClass();
-			throw e;
+			throw new  XpathException(e.getMessage());
 		}
 		
 		NodeList nodes = (NodeList) result;
