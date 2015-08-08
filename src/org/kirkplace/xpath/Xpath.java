@@ -7,6 +7,11 @@ import javax.xml.parsers.*;
 import java.io.*;
 import org.xml.sax.*;
 
+/*
+ * Original work. Being Rewritten.
+ */
+
+
 public class Xpath{
 
   private DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance(); 

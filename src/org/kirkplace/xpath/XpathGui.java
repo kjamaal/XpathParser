@@ -7,6 +7,10 @@ import javax.xml.xpath.XPathExpression;
 import java.awt.event.*;
 import org.w3c.dom.*;
 
+/*
+ * Original work. Being rewritten.
+ */
+
 public class XpathGui {
 
 	private JFrame frame;
