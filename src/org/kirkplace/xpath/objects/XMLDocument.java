@@ -20,7 +20,7 @@ public class XMLDocument {
 		return doc;
 	}
 
-	public void setDoc(String text, boolean namespace) {
+	public void setDoc(String text, boolean namespace) throws XpathException {
 		DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
 		
 		  try {
@@ -30,11 +30,10 @@ public class XMLDocument {
 			} 
 		
 			catch (SAXException | IOException | ParserConfigurationException e) {
-				
-				e.getStackTrace();
-				e.getMessage();
-				e.getClass();
-							
+				/*
+				 * TODO: Improve messaging
+				 */
+				throw new XpathException(e.getMessage());
 			}
 	}
 }

@@ -1,4 +1,4 @@
-package org.kirkplace.xpath.serviceImpl;
+package org.kirkplace.xpath.webServiceImpl;
 
 import javax.servlet.http.*;
 

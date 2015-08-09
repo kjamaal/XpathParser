@@ -20,6 +20,9 @@ public class Evaluator {
 		} 
 		
 		catch (XPathExpressionException e){
+			/*
+			 * TODO: Improve messaging.
+			 */
 			throw new  XpathException(e.getMessage());
 		}
 		
@@ -27,5 +30,9 @@ public class Evaluator {
 		
 		return nodes;
 		
+	}
+	
+	public String getXpathStringRep(){
+		return null;
 	}
 }

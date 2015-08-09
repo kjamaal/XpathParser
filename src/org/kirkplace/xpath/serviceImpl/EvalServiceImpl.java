@@ -1,39 +1,41 @@
 package org.kirkplace.xpath.serviceImpl;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.Response;
+import javax.xml.xpath.XPathExpression;
 
-import org.kirkplace.xpath.service.EvalService;
-import org.kirkplace.xpath.util.XmlAdapter;
+import org.kirkplace.xpath.objects.*;
+import org.kirkplace.xpath.util.Evaluator;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 
-@Produces("application/json; charset=UTF-8")
-public class EvalServiceImpl extends BaseService {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
-	@Resource
-	private EvalService eval;
-	private XmlAdapter resp;
+public class EvalServiceImpl{
 	
-	@POST
-	@Path("/evaluateXpathExpression")
-	public Response evaluateXpathExpr(@Context HttpServletRequest request,
-			@Context HttpServletResponse response){
-		
+	private XMLDocument docBuilder;
+	private XMLExpression expBuilder;
+	private Evaluator eval = new Evaluator();
+	
+	public NodeList evaluateXpathExpr(String expression, String document) throws XpathException{
 		/*
-		 * TODO: Extract xpath and document and pass their string representations. Handle exception.
+		 * TODO: Check for namespace to set xml to namespace aware or not.
 		 */
-		return Response.ok(resp.nodeListResponse(eval.evaluateXpathExpr("expression", "document"))).build();
+		try{
+		docBuilder.setDoc(document, true);
+		expBuilder.setExpr(expression);
+		}catch(XpathException xe){
+			throw xe;
+		}
+		Document doc = docBuilder.getDoc();
+		XPathExpression expr = expBuilder.getExpr();
+		
+		try{
+			return eval.getNodeNameAndValue(doc, expr);
+		}catch(XpathException xe){
+			throw xe;
+		}
 	}
 	
+	public String generateXpathExpr(){
+		
+		
+		return null;
+	}
 }

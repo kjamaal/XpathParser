@@ -8,6 +8,10 @@ public class XmlAdapter {
 	 * TODO: wrap NodeList into whatever response object the UI is expecting.
 	 */
 	public Object nodeListResponse(NodeList list){
-		return "";
+		return null;
+	}
+	
+	public Object xpathStringRepResponse(String xpath){
+		return null;
 	}
 }
