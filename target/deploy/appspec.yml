@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /opt/bitnami/apache-tomcat/webapps
+hooks:
+  BeforeInstall:
+    - location: /opt/bitnami/apache-tomcat/webapps/before-install.sh
+  AfterInstall:
+    - location: /opt/bitnami/apache-tomcat/webapps/after-install.sh
