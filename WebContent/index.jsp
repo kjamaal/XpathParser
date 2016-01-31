@@ -59,10 +59,10 @@
         <h1> Enter XML stuff </h1>
 			<form class="lead" action="XML.jsp" method="get">
 			
-			<label for="input">Input XML:</label>
+			<label for="input" style="backgroup-color: blue">Input XML:</label>
 			<textarea class="form-control" rows="5" id="input" name="inputXml"></textarea>
 			
-			<label for="output">Output XML:</label>
+			<label for="output" style="backgroup-color: blue">Output XML:</label>
 			<textarea class="form-control" rows="5" id="output" name="outputXml"></textarea>
 			<!--
 			Input XML: <input type="text" name="inputXml">
