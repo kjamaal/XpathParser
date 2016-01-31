@@ -3,7 +3,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
-  	<meta http-equiv="refresh" content="5">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,13 +55,13 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1> Enter XML stuff </h1>
+        <h1 style="backgroup-color: blue"> Enter XML stuff </h1>
 			<form class="lead" action="XML.jsp" method="get">
 			
 			<label for="input" style="backgroup-color: blue">Input XML:</label>
 			<textarea class="form-control" rows="5" id="input" name="inputXml"></textarea>
 			
-			<label for="output" style="backgroup-color: blue">Output XML:</label>
+			<label for="output">Output XML:</label>
 			<textarea class="form-control" rows="5" id="output" name="outputXml"></textarea>
 			<!--
 			Input XML: <input type="text" name="inputXml">
