@@ -54,7 +54,7 @@
 
     <div class="container">
 
-      <div class="starter-template" style="background-color: blue;">
+      <div class="starter-template"> <!-- style="background-color: blue;" --> 
         <h1> Enter XML stuff </h1>
 			<form class="lead" action="XML.jsp" method="get">
 			
