@@ -1,0 +1,1 @@
+powershell -Command "& ./cibuild.ps1"
