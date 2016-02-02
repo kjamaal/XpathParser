@@ -54,8 +54,8 @@
 
     <div class="container">
 
-      <div class="starter-template">
-        <h1 style="backgroup-color: blue"> Enter XML stuff </h1>
+      <div class="starter-template" style="background-color: blue;">
+        <h1> Enter XML stuff </h1>
 			<form class="lead" action="XML.jsp" method="get">
 			
 			<label for="input" style="backgroup-color: blue">Input XML:</label>
