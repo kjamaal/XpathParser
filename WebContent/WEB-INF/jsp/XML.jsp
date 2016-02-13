@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
@@ -13,15 +14,15 @@
 
     <title>Q</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Bootstrap core CSS -->	
+    <spring:url value="/resources/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" var="bootstrapCSS" />
+	<link href="${bootstrapCSS}" rel="stylesheet" />
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../lib/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
+    <spring:url value="/resources/lib/assets/css/ie10-viewport-bug-workaround.css" var="ie10bug" />
+	<link href="${ie10bug}" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link href="../lib/bootstrap-3.3.6-dist/css/starter-template.css" rel="stylesheet">
-
+    <spring:url value="/resources/lib/bootstrap-3.3.6-dist/css/starter-template.css" var="templateCSS" />
+	<link href="${templateCSS}" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -58,6 +59,9 @@
         <h1> Enter XML stuff </h1>
 			<form class="lead" action="index.jsp" method="get">
 			
+			<label for="input">Xpath Expression</label>
+			<input type="text" class="form-control" id="input" name="expression" value="${response}">
+			
 			<label for="input">Input XML:</label>
 			<textarea class="form-control" rows="5" id="input" name="inputXml"></textarea>
 			
@@ -68,7 +72,7 @@
 			Output XML: <input type="text" name="outputXml">
 			-->
 			<br>
-			<input type="submit">
+			<input type="submit" value="clear">
 			
 			</form>
       </div>
@@ -80,9 +84,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../lib/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <spring:url value="/resources/lib/assets/js/vendor/jquery.min.js" var="jquery" />
+    <spring:url value="/resources/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js" var="bootstrapJS" />
+    <spring:url value="/resources/lib/assets/js/ie10-viewport-bug-workaround.js" var="ie10bugJS" />
+    <script>window.jQuery || document.write('<script src="${jquery}"><\/script>')</script>
+    <script src="${bootstrapJS}"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../lib/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="${ie10bugJS}"></script>
   </body>
 </html>

@@ -12,10 +12,15 @@
   	</servlet-class>
   	<load-on-startup>1</load-on-startup>
   </servlet>
+  <listener>
+  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+  <param-name>contextConfigLocation</param-name>
+  <param-value>/WEB-INF/itcooltools-servlet.xml</param-value>
+</context-param>
   <servlet-mapping>
   	<servlet-name>itcooltools</servlet-name>
   	<url-pattern>/XML.jsp</url-pattern>
-  	<url-pattern>/XML.html</url-pattern>
-  	<url-pattern>*.html</url-pattern>
   </servlet-mapping>
 </web-app>
