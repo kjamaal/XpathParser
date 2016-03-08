@@ -8,6 +8,9 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
 
 	<context:component-scan base-package="com.itcooltools"/>
+	<context:annotation-config/>
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<mvc:annotation-driven />
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
@@ -16,7 +19,8 @@
 		<property name="suffix" value=".jsp"/> 
 	</bean>
 	
-	<mvc:resources mapping="/resources/**" location="/resources/" />
-	<mvc:annotation-driven />
-
+	<bean id="evalServiceImpl" class="com.itcooltools.xpath.serviceImpl.EvalServiceImpl"/>
+	<bean id="xmlAdapter" class="com.itcooltools.xpath.util.XmlAdapter"/>
+	<bean id="xmlDocument" class="com.itcooltools.xpath.objects.XMLDocument"/>
+	<bean id="xmlExpression" class="com.itcooltools.xpath.objects.XMLExpression"/> 
 </beans>
